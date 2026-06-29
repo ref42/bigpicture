@@ -1,0 +1,40 @@
+name: Validate Skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate skill
+        run: python scripts/validate_skill.py big-picture-thinking
+
+      - name: Check installer syntax
+        run: |
+          bash -n scripts/install.sh
+          pwsh -NoProfile -Command '$null = [scriptblock]::Create((Get-Content -Raw scripts/install.ps1))'
+
+      - name: Test local shell installer
+        run: |
+          tmp="$(mktemp -d)"
+          sh scripts/install.sh codex --install-root "$tmp"
+          test -f "$tmp/big-picture-thinking/SKILL.md"
+
+      - name: Test local PowerShell installer
+        shell: pwsh
+        run: |
+          $tmp = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString("N"))
+          ./scripts/install.ps1 -Target codex -InstallRoot $tmp
+          if (-not (Test-Path (Join-Path $tmp "big-picture-thinking/SKILL.md"))) {
+            throw "PowerShell installer did not install SKILL.md"
+          }
