@@ -1,5 +1,5 @@
 ---
-name: big-picture-thinking
+name: bigpicture
 description: "Strategic sensemaking for messy, ambiguous, high-context, or overly narrow problems. Use when the user asks for the big picture, wants to zoom out, feels stuck, needs root-cause, system, incentive, stakeholder, tradeoff, risk, or second-order-effect analysis, is deciding what matters, comparing options, planning next moves, or wants a broader frame across technical, product, business, career, learning, organizational, relationship, creative, or life-planning contexts."
 ---
 

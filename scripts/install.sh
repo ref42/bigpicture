@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 set -eu
 
-SKILL_NAME="big-picture-thinking"
+SKILL_NAME="bigpicture"
 TARGET="both"
-REPO="${REPO:-linkyourbin/big-picture-skill}"
+REPO="${REPO:-ref42/big-picture-skill}"
 REF="${REF:-master}"
 INSTALL_ROOT=""
 FORCE=0

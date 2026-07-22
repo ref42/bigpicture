@@ -3,7 +3,7 @@ param(
     [ValidateSet("codex", "claude", "both")]
     [string]$Target = "both",
 
-    [string]$Repo = "linkyourbin/big-picture-skill",
+    [string]$Repo = "ref42/big-picture-skill",
     [string]$Ref = "master",
     [string]$InstallRoot,
     [switch]$Force
@@ -11,7 +11,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$SkillName = "big-picture-thinking"
+$SkillName = "bigpicture"
 
 function Get-HomeDirectory {
     if ($env:HOME) {

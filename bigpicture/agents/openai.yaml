@@ -1,0 +1,4 @@
+interface:
+  display_name: "Big Picture Thinking"
+  short_description: "Zoom out messy problems into clear next moves."
+  default_prompt: "Use $bigpicture to help me understand the bigger picture behind this problem and choose my next move."

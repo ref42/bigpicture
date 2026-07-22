@@ -11,25 +11,25 @@ Install for both Claude Code and Codex:
 ### macOS / Linux
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.sh | sh -s -- both
+curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- both
 ```
 
 ### Windows PowerShell
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.ps1))) -Target both
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target both
 ```
 
 Install for only one agent:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.sh | sh -s -- claude
-curl -fsSL https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.sh | sh -s -- codex
+curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- claude
+curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- codex
 ```
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.ps1))) -Target claude
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.ps1))) -Target codex
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target claude
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target codex
 ```
 
 If the skill is already installed, add `--force` on macOS/Linux or `-Force` on Windows.
@@ -39,33 +39,33 @@ Restart Claude Code or Codex after installing.
 ## Install From A Clone
 
 ```sh
-git clone https://github.com/linkyourbin/big-picture-skill.git
+git clone https://github.com/ref42/big-picture-skill.git
 cd big-picture-skill
 sh scripts/install.sh both
 ```
 
 ```powershell
-git clone https://github.com/linkyourbin/big-picture-skill.git
+git clone https://github.com/ref42/big-picture-skill.git
 cd big-picture-skill
 .\scripts\install.ps1 -Target both
 ```
 
 ## Install Locations
 
-The installer copies `big-picture-thinking/` to:
+The installer copies `bigpicture/` to:
 
-- Claude Code: `~/.claude/skills/big-picture-thinking`
-- Codex: `~/.agents/skills/big-picture-thinking`
+- Claude Code: `~/.claude/skills/bigpicture`
+- Codex: `~/.agents/skills/bigpicture`
 
 Use `--install-root` or `-InstallRoot` if your agent is configured to read skills from another directory.
 For older Codex setups that still use `~/.codex/skills`, install with:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.sh | sh -s -- codex --install-root "$HOME/.codex/skills"
+curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- codex --install-root "$HOME/.codex/skills"
 ```
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/linkyourbin/big-picture-skill/master/scripts/install.ps1))) -Target codex -InstallRoot "$HOME\.codex\skills"
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target codex -InstallRoot "$HOME\.codex\skills"
 ```
 
 ## Usage
@@ -73,13 +73,13 @@ curl -fsSL https://raw.githubusercontent.com/linkyourbin/big-picture-skill/maste
 Claude Code:
 
 ```text
-/big-picture-thinking help me understand the bigger picture behind this product decision
+/bigpicture help me understand the bigger picture behind this product decision
 ```
 
 Codex:
 
 ```text
-Use $big-picture-thinking to zoom out from this technical debugging problem and identify the real system failure.
+Use $bigpicture to zoom out from this technical debugging problem and identify the real system failure.
 ```
 
 ## What It Helps With
@@ -95,7 +95,7 @@ Use $big-picture-thinking to zoom out from this technical debugging problem and 
 
 ```text
 big-picture-skill/
-  big-picture-thinking/
+  bigpicture/
     SKILL.md
     agents/
       openai.yaml
@@ -113,14 +113,14 @@ big-picture-skill/
       validate.yml
 ```
 
-The actual skill is `big-picture-thinking/`. Everything else supports installation, validation, and distribution.
+The actual skill is `bigpicture/`. Everything else supports installation, validation, and distribution.
 
 ## Development
 
 Validate the skill locally:
 
 ```sh
-python scripts/validate_skill.py big-picture-thinking
+python scripts/validate_skill.py bigpicture
 bash -n scripts/install.sh
 ```
 
@@ -135,13 +135,13 @@ Test an install into a temporary directory:
 ```sh
 tmp="$(mktemp -d)"
 sh scripts/install.sh codex --install-root "$tmp"
-test -f "$tmp/big-picture-thinking/SKILL.md"
+test -f "$tmp/bigpicture/SKILL.md"
 ```
 
 ```powershell
 $tmp = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString("N"))
 .\scripts\install.ps1 -Target codex -InstallRoot $tmp
-Test-Path (Join-Path $tmp "big-picture-thinking\SKILL.md")
+Test-Path (Join-Path $tmp "bigpicture\SKILL.md")
 ```
 
 ## License
