@@ -90,20 +90,20 @@ function Get-InstallTargets {
         })
     }
 
-    $home = Get-HomeDirectory
+    $userHome = Get-HomeDirectory
     $targets = @()
 
     if ($Target -eq "codex" -or $Target -eq "both") {
         $targets += [pscustomobject]@{
             Name = "codex"
-            Root = Join-Path $home ".agents\skills"
+            Root = Join-Path $userHome ".agents\skills"
         }
     }
 
     if ($Target -eq "claude" -or $Target -eq "both") {
         $targets += [pscustomobject]@{
             Name = "claude"
-            Root = Join-Path $home ".claude\skills"
+            Root = Join-Path $userHome ".claude\skills"
         }
     }
 
