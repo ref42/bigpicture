@@ -40,13 +40,13 @@ Restart Claude Code or Codex after installing.
 
 ```sh
 git clone https://github.com/ref42/bigpicture.git
-cd big-picture-skill
+cd bigpicture
 sh scripts/install.sh both
 ```
 
 ```powershell
 git clone https://github.com/ref42/bigpicture.git
-cd big-picture-skill
+cd bigpicture
 .\scripts\install.ps1 -Target both
 ```
 
