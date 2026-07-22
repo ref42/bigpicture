@@ -2,6 +2,10 @@
   <img src="assets/icon.svg" alt="Big Picture" width="160"/>
 </p>
 
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh.md">中文</a>
+</p>
+
 # Big Picture
 
 > Zoom out. Understand what's really happening. Act on what matters.
