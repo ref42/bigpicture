@@ -1,7 +1,43 @@
 <svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="128" cy="128" r="115" fill="none" stroke="#0969da" stroke-width="3"   opacity="0.18"/>
-  <circle cx="128" cy="128" r="85"  fill="none" stroke="#0969da" stroke-width="4"   opacity="0.35"/>
-  <circle cx="128" cy="128" r="55"  fill="none" stroke="#0969da" stroke-width="5"   opacity="0.60"/>
-  <circle cx="128" cy="128" r="28"  fill="none" stroke="#0969da" stroke-width="6"   opacity="0.85"/>
-  <circle cx="128" cy="128" r="10"  fill="#0969da"/>
+  <g transform="translate(128,128)">
+
+    <!-- Outer ring: slow clockwise -->
+    <g>
+      <circle r="115" fill="none" stroke="#0969da" stroke-width="3" opacity="0.20"
+              stroke-dasharray="36 18"/>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Ring 2: medium counter-clockwise -->
+    <g>
+      <circle r="85" fill="none" stroke="#0969da" stroke-width="4" opacity="0.38"
+              stroke-dasharray="26 13"/>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="-360" dur="9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Ring 3: faster clockwise -->
+    <g>
+      <circle r="55" fill="none" stroke="#0969da" stroke-width="5" opacity="0.62"
+              stroke-dasharray="18 9"/>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="360" dur="5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Inner ring: fastest counter-clockwise -->
+    <g>
+      <circle r="28" fill="none" stroke="#0969da" stroke-width="6" opacity="0.88"
+              stroke-dasharray="12 6"/>
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="-360" dur="3s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Center dot: gentle pulse -->
+    <circle r="10" fill="#0969da">
+      <animate attributeName="r"       values="8;11;8" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+  </g>
 </svg>
