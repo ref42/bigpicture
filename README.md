@@ -8,7 +8,7 @@
 
 # Big Picture
 
-> Zoom out. Understand what's really happening. Act on what matters.
+> Stop seeing trees. Start seeing the forest.
 
 <br/>
 
