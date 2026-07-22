@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="Big Picture" width="80"/>
+  <img src="assets/icon.svg" alt="Big Picture" width="80"/>
 </p>
 
 # Big Picture
