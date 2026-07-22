@@ -45,8 +45,8 @@ Use this workflow unless the user asked for a very short answer:
 
 Read only the references that fit the request:
 
-- Read `references/lenses.md` when the user needs deeper causal analysis, systems thinking, incentives, risk, time horizon, leverage, or second-order effects.
-- Read `references/playbooks.md` when the request fits a common problem type such as decisions, technical architecture, business strategy, career, conflict, crisis, or creative framing.
+- Read `references/lenses.md` when the user needs deeper causal analysis, systems thinking, incentives, risk, time horizon, leverage, second-order effects, feedback loops, structural leverage points, abstraction layers, or time-and-scale implications.
+- Read `references/playbooks.md` when the request fits a common problem type such as decisions, technical architecture, business strategy, career, conflict, crisis, creative framing, large project coordination, or recurring structural problems.
 - Read `references/templates.md` when choosing an output format such as a one-screen answer, decision memo, systems map, executive brief, or technical zoom-out.
 - Read `references/question-bank.md` when the situation is under-specified and one or two sharp questions would materially improve the analysis.
 

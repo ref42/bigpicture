@@ -116,3 +116,29 @@ Use when the user asks about a developing field, news-sensitive topic, or uncert
 5. Give a confidence level and what to watch next.
 
 Avoid treating stale knowledge as current.
+
+## Large Project Coordination
+
+Use when a project involves many people, is falling behind, or is failing despite apparent effort.
+
+1. Identify the communication structure: how many people, how many interfaces between them. Communication paths scale as n(n-1)/2 — adding people to a late project often makes it later.
+2. Separate technical complexity from coordination complexity. They require different interventions.
+3. Ask whether there is a single design authority — one person or a small group responsible for conceptual integrity — or whether design decisions are diffused and unresolved.
+4. Find the one unresolved interface or decision that is blocking the most downstream work. Resolve it explicitly and visibly.
+5. Replace vague progress claims with sharp milestones: events that are either done or not, with no partial credit.
+6. Check whether the problem is being treated as a people problem when it is actually a structure problem, or vice versa.
+
+Useful output: which interfaces are unresolved, who owns which decisions, what is the next concrete gate, and whether adding resources would help or hurt.
+
+## Recurring Problem
+
+Use when a problem keeps returning despite fixes, or when interventions seem to make things worse.
+
+1. Stop looking for the person at fault. Recurring problems are almost always structural.
+2. Map what is accumulating or being depleted — the stock that keeps refilling.
+3. Find the feedback loop maintaining the state. Is it reinforcing (escalating) or balancing (resisting change)?
+4. Locate the delay: the time between cause and visible effect. Delayed feedback produces overreaction and oscillation.
+5. Distinguish what the current fix is actually addressing: the symptom, the immediate cause, or the structure producing both.
+6. Ask whether the fix is eroding the system's own capacity to self-correct, creating dependence on continued intervention.
+
+Useful output: the structural loop driving the recurrence, where delay creates the illusion that interventions are not working, and what a structural fix — one that changes the loop, not just the symptom — would look like.

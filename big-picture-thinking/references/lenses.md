@@ -134,3 +134,57 @@ Clarify:
 - What would require coalition, authority, capital, or time?
 
 Do not recommend actions that require power the user does not have without naming the gap.
+
+## Essence vs. Accident
+
+Classify the difficulty before trying to solve it:
+
+- **Essential complexity**: Inherent to the problem itself — the logic, the irreducible requirements, the domain. Cannot be engineered away.
+- **Accidental complexity**: Introduced by tools, processes, history, or prior choices. Can be reduced by better tools, refactoring, or simplification.
+
+Only accidental complexity can be eliminated. Effort spent attacking essential complexity with technical tools is largely wasted. Ask whether the difficulty is a property of the problem or a property of how the problem is currently being handled.
+
+## Feedback Loops and Stocks
+
+Map the situation as:
+
+- **Stocks**: What is accumulating or being depleted — trust, technical debt, morale, cash, capability, reputation?
+- **Flows**: What is increasing or decreasing those stocks?
+- **Reinforcing loops**: Self-amplifying patterns — virtuous cycles or vicious spirals.
+- **Balancing loops**: Self-correcting patterns — stabilizers that resist change.
+- **Delays**: Time between action and visible effect.
+
+Delays in feedback loops are the source of oscillation, overreaction, and recurring failure. When action produces no visible result, the natural response is to act more — but when the delayed feedback finally arrives, it is already too much. Ask: what is accumulating here, what loop is driving it, and where is the delay?
+
+## Leverage Points
+
+When intervening in a system, the point of intervention matters more than the force applied. In order of increasing impact:
+
+1. Parameters and numbers — rarely change behavior durably
+2. Feedback loop strength and delay length
+3. Rules, incentives, and information flows
+4. Goals and purposes of the system
+5. The paradigm — the shared assumptions that generate the system (strongest)
+
+Most interventions happen at level 1. Most durable change happens at levels 3–5. Ask: am I adjusting a number, or changing a rule, a goal, or a shared belief?
+
+## Time × Scale
+
+For technical and organizational decisions, cost does not live at a single moment — it integrates over time and multiplies by the number of people affected:
+
+- A shortcut that saves a day today but adds friction to every future change may be net negative.
+- A practice acceptable at 10 people becomes a bottleneck at 1000.
+- Any observable behavior of a system will eventually be depended on by someone, regardless of what the documentation says.
+
+Ask: what does this cost per year, times the number of people affected? Is this decision reversible or irreversible? If irreversible, the analysis needs to be proportionally more careful.
+
+## Abstraction Layer
+
+For problems in software systems, ask what layer the root cause actually lives in:
+
+- Application layer: logic, design, algorithm, data model
+- Framework or library layer: configuration, version, API contract
+- Runtime or OS layer: process, memory, concurrency, scheduling
+- Hardware or network layer: latency, bandwidth, physical failure mode
+
+Symptoms often appear at a higher layer than their cause. A bug that looks like application logic may be a library or runtime issue. A performance problem that looks like an algorithm may be a memory locality or I/O pattern problem. Moving one layer down often reveals the actual constraint.
