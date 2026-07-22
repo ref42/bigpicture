@@ -11,25 +11,25 @@ Install for both Claude Code and Codex:
 ### macOS / Linux
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- both
+curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- both
 ```
 
 ### Windows PowerShell
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target both
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target both
 ```
 
 Install for only one agent:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- claude
-curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- codex
+curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- claude
+curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- codex
 ```
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target claude
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target codex
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target claude
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target codex
 ```
 
 If the skill is already installed, add `--force` on macOS/Linux or `-Force` on Windows.
@@ -39,13 +39,13 @@ Restart Claude Code or Codex after installing.
 ## Install From A Clone
 
 ```sh
-git clone https://github.com/ref42/big-picture-skill.git
+git clone https://github.com/ref42/bigpicture.git
 cd big-picture-skill
 sh scripts/install.sh both
 ```
 
 ```powershell
-git clone https://github.com/ref42/big-picture-skill.git
+git clone https://github.com/ref42/bigpicture.git
 cd big-picture-skill
 .\scripts\install.ps1 -Target both
 ```
@@ -61,11 +61,11 @@ Use `--install-root` or `-InstallRoot` if your agent is configured to read skill
 For older Codex setups that still use `~/.codex/skills`, install with:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.sh | sh -s -- codex --install-root "$HOME/.codex/skills"
+curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- codex --install-root "$HOME/.codex/skills"
 ```
 
 ```powershell
-& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/big-picture-skill/master/scripts/install.ps1))) -Target codex -InstallRoot "$HOME\.codex\skills"
+& ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target codex -InstallRoot "$HOME\.codex\skills"
 ```
 
 ## Usage

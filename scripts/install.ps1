@@ -3,7 +3,7 @@ param(
     [ValidateSet("codex", "claude", "both")]
     [string]$Target = "both",
 
-    [string]$Repo = "ref42/big-picture-skill",
+    [string]$Repo = "ref42/bigpicture",
     [string]$Ref = "master",
     [string]$InstallRoot,
     [switch]$Force

@@ -3,7 +3,7 @@ set -eu
 
 SKILL_NAME="bigpicture"
 TARGET="both"
-REPO="${REPO:-ref42/big-picture-skill}"
+REPO="${REPO:-ref42/bigpicture}"
 REF="${REF:-master}"
 INSTALL_ROOT=""
 FORCE=0
