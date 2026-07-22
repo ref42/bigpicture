@@ -1,33 +1,7 @@
 <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="circle-clip">
-      <circle cx="60" cy="60" r="60"/>
-    </clipPath>
-    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#1c2333"/>
-      <stop offset="100%" stop-color="#0d1117"/>
-    </radialGradient>
-    <radialGradient id="dot-grad" cx="40%" cy="35%" r="60%">
-      <stop offset="0%" stop-color="#79c0ff"/>
-      <stop offset="100%" stop-color="#1f6feb"/>
-    </radialGradient>
-  </defs>
-
-  <!-- Circular background -->
-  <circle cx="60" cy="60" r="60" fill="url(#bg-grad)"/>
-
-  <!-- Expanding rings -->
-  <g clip-path="url(#circle-clip)">
-    <circle cx="60" cy="60" r="48" fill="none" stroke="#1f6feb" stroke-width="1"   opacity="0.18"/>
-    <circle cx="60" cy="60" r="36" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.32"/>
-    <circle cx="60" cy="60" r="24" fill="none" stroke="#388bfd" stroke-width="2"   opacity="0.55"/>
-    <circle cx="60" cy="60" r="13" fill="none" stroke="#58a6ff" stroke-width="2.5" opacity="0.75"/>
-  </g>
-
-  <!-- Center glow -->
-  <circle cx="60" cy="60" r="9" fill="url(#dot-grad)" opacity="0.25"/>
-  <!-- Center dot -->
-  <circle cx="60" cy="60" r="5" fill="url(#dot-grad)"/>
-  <!-- Center highlight -->
-  <circle cx="58" cy="58" r="2" fill="#cae8ff" opacity="0.6"/>
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#0969da" stroke-width="1.5" opacity="0.18"/>
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#0969da" stroke-width="2"   opacity="0.35"/>
+  <circle cx="60" cy="60" r="26" fill="none" stroke="#0969da" stroke-width="2.5" opacity="0.60"/>
+  <circle cx="60" cy="60" r="13" fill="none" stroke="#0969da" stroke-width="3"   opacity="0.85"/>
+  <circle cx="60" cy="60" r="5"  fill="#0969da"/>
 </svg>
