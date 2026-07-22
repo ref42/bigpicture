@@ -142,3 +142,27 @@ Use when a problem keeps returning despite fixes, or when interventions seem to 
 6. Ask whether the fix is eroding the system's own capacity to self-correct, creating dependence on continued intervention.
 
 Useful output: the structural loop driving the recurrence, where delay creates the illusion that interventions are not working, and what a structural fix — one that changes the loop, not just the symptom — would look like.
+
+## Incentive Alignment
+
+Use when actors are not cooperating, are gaming a metric, or are behaving in ways that seem irrational but make sense given their actual payoffs.
+
+1. Map each actor's payoffs: what they gain, lose, and are measured on. Do not assume the official objective is the actual objective.
+2. Identify the current equilibrium: given those payoffs, what is each actor's best response? Does that equilibrium match the desired outcome?
+3. If not, find a rule or structural change that makes the desired behavior the dominant strategy — meaning actors are better off doing it than not, regardless of what others do.
+4. Check that participation remains attractive: every actor must be at least as well off under the new rules as opting out.
+5. Anticipate gaming: will actors find unintended strategies that satisfy the letter of the rule but produce the wrong outcome?
+
+Do not substitute moral appeals or exhortation for structural changes. Appeals work in high-trust, one-shot situations. Rules work across repeated interactions and strangers.
+
+## Contradiction Analysis
+
+Use when a problem persists despite repeated intervention, or when multiple problems seem entangled and progress on one is always blocked by another.
+
+1. List the active tensions — the forces in opposition that are producing the observable problems.
+2. Identify the principal one: which tension, if resolved, would make the others easier or dissolve?
+3. Determine which side of the principal tension is currently dominant, and whether that is shifting.
+4. Assess whether the tension is antagonistic (interests fundamentally opposed, requiring separation or structural change) or non-antagonistic (interests partially aligned, resolvable through negotiation or adjustment).
+5. Focus intervention on the principal tension, matched to its type. Do not scatter effort across secondary tensions.
+6. Ask what internal structural change is needed — not just what external tool or authority to import.
+

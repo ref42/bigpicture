@@ -45,10 +45,20 @@ Use this workflow unless the user asked for a very short answer:
 
 Read only the references that fit the request:
 
-- Read `references/lenses.md` when the user needs deeper causal analysis, systems thinking, incentives, risk, time horizon, leverage, second-order effects, feedback loops, structural leverage points, abstraction layers, or time-and-scale implications.
-- Read `references/playbooks.md` when the request fits a common problem type such as decisions, technical architecture, business strategy, career, conflict, crisis, creative framing, large project coordination, or recurring structural problems.
+- Read `references/lenses.md` when the user needs deeper causal analysis, systems thinking, incentives, risk, time horizon, leverage, second-order effects, feedback loops, structural leverage points, abstraction layers, time-and-scale implications, equilibrium analysis, or principal contradiction identification.
+- Read `references/playbooks.md` when the request fits a common problem type such as decisions, technical architecture, business strategy, career, conflict, crisis, creative framing, large project coordination, recurring structural problems, incentive misalignment, or entangled tensions.
 - Read `references/templates.md` when choosing an output format such as a one-screen answer, decision memo, systems map, executive brief, or technical zoom-out.
 - Read `references/question-bank.md` when the situation is under-specified and one or two sharp questions would materially improve the analysis.
+
+For domain-specific depth, read the relevant book reference:
+
+- Read `references/books/game-theory.md` when the problem involves strategic competition, incentive misalignment, mechanism design, actors gaming a metric, or multiple parties with conflicting interests.
+- Read `references/books/on-contradiction.md` when the problem requires identifying the principal tension, understanding what is driving a system's change, or diagnosing why repeated intervention is not working.
+- Read `references/books/clean-code.md` when evaluating code quality, naming, readability, or technical debt at the micro level.
+- Read `references/books/beautiful-code.md` when assessing whether a design has the right level of simplicity and elegance given its constraints, or when the user is making aesthetic trade-offs in a technical solution.
+- Read `references/books/how-google-tests.md` when diagnosing quality culture, test infrastructure, testability as a design property, or the sustainability of a testing practice.
+- Read `references/books/ostep.md` when the problem involves OS-level behavior: scheduling, memory management, concurrency primitives, file system consistency, or virtualization boundaries.
+- Read `references/books/hackers-delight.md` when the problem involves low-level integer arithmetic, bit manipulation, or performance optimization at the representation level.
 
 ## Default Output
 

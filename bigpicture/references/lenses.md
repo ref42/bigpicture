@@ -188,3 +188,23 @@ For problems in software systems, ask what layer the root cause actually lives i
 - Hardware or network layer: latency, bandwidth, physical failure mode
 
 Symptoms often appear at a higher layer than their cause. A bug that looks like application logic may be a library or runtime issue. A performance problem that looks like an algorithm may be a memory locality or I/O pattern problem. Moving one layer down often reveals the actual constraint.
+
+## Equilibrium vs. Optimum
+
+When multiple actors are involved, the outcome is not determined by any one actor's intentions — it is determined by the interaction structure. Individual rationality does not produce collective optimum. The question is not "what should people do?" but "given the payoffs and rules, what will they actually do, and is that the equilibrium I want?"
+
+If the current behavior is an equilibrium — meaning every actor is already doing their best given what others are doing — moral appeals and requests to "do better" will not change it. The structure must change.
+
+Ask: is this behavior an equilibrium? What rule change would make the desired behavior the dominant strategy?
+
+## Principal Contradiction
+
+In any complex situation with multiple tensions, one is principal — its resolution is the precondition for progress on everything else. Scattering effort across all tensions at once is less effective than identifying and attacking the principal one.
+
+Ask: if this one tension were resolved, would the others become easier or dissolve? That is likely the principal contradiction. Which side of it is currently dominant, and is that shifting?
+
+## Internal Cause vs. External Condition
+
+External inputs — tools, methodologies, outside experts, new technology — accelerate or constrain what a system can do, but they cannot substitute for internal structural capacity. A system that lacks the internal structure to absorb a change will resist or reject it regardless of how powerful the external input is.
+
+Ask: am I trying to fix internal structure, or am I importing an external solution and hoping it takes? What internal capability or design change would make the external input actually land?

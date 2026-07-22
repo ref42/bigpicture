@@ -103,3 +103,22 @@ Ask fewer questions than seem tempting. Prefer one high-value question over a ch
 - When something goes wrong, is the cause clear and the recovery path obvious?
 - Does the design communicate the correct mental model, or does it invite a wrong one?
 - Is the error more likely a slip — correct intent, wrong execution — or a mistake — wrong understanding of the situation?
+
+## Strategic Interaction And Incentives
+
+- Is the bad behavior an equilibrium — meaning every actor is doing their best given what others are doing? If so, what structural change would shift it?
+- What is each actor actually measured on and rewarded for, as opposed to what they are officially supposed to optimize?
+- Who benefits from the current situation staying as it is?
+- Will the proposed rule or metric be gamed? What unintended strategy satisfies its letter while violating its spirit?
+- Is this a one-shot interaction or a repeated one? Does reputation operate here?
+- Does the solution require everyone to act against their own interest, or does it make the right action the self-interested one?
+
+## Principal Contradiction And Internal Cause
+
+- What are the main tensions in this situation? Which one, if resolved, would make the others easier?
+- Which side of the principal tension is currently dominant? Is that shifting?
+- Is the conflict fundamentally zero-sum (requiring separation or structural change) or positive-sum (resolvable through adjustment)?
+- Am I trying to fix internal structure, or am I importing an external solution and hoping it takes?
+- What internal capability or design change would make the external input actually land?
+- Is the proposed solution applying a general framework to a specific situation, or is it derived from the specifics of this situation?
+
