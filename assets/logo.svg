@@ -1,32 +1,33 @@
-<svg width="820" height="160" viewBox="0 0 820 160" xmlns="http://www.w3.org/2000/svg">
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <clipPath id="bounds">
-      <rect width="820" height="160" rx="10"/>
+    <clipPath id="circle-clip">
+      <circle cx="60" cy="60" r="60"/>
     </clipPath>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c2333"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </radialGradient>
+    <radialGradient id="dot-grad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#79c0ff"/>
+      <stop offset="100%" stop-color="#1f6feb"/>
+    </radialGradient>
   </defs>
 
-  <!-- Expanding rings, clipped to card bounds, centered left -->
-  <g clip-path="url(#bounds)">
-    <circle cx="80" cy="80" r="72" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.14"/>
-    <circle cx="80" cy="80" r="50" fill="none" stroke="#1f6feb" stroke-width="2"   opacity="0.28"/>
-    <circle cx="80" cy="80" r="30" fill="none" stroke="#1f6feb" stroke-width="2.5" opacity="0.50"/>
-    <circle cx="80" cy="80" r="12" fill="#1f6feb" opacity="0.85"/>
-    <circle cx="80" cy="80" r="5"  fill="#58a6ff"/>
+  <!-- Circular background -->
+  <circle cx="60" cy="60" r="60" fill="url(#bg-grad)"/>
+
+  <!-- Expanding rings -->
+  <g clip-path="url(#circle-clip)">
+    <circle cx="60" cy="60" r="48" fill="none" stroke="#1f6feb" stroke-width="1"   opacity="0.18"/>
+    <circle cx="60" cy="60" r="36" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.32"/>
+    <circle cx="60" cy="60" r="24" fill="none" stroke="#388bfd" stroke-width="2"   opacity="0.55"/>
+    <circle cx="60" cy="60" r="13" fill="none" stroke="#58a6ff" stroke-width="2.5" opacity="0.75"/>
   </g>
 
-  <!-- Divider -->
-  <line x1="162" y1="32" x2="162" y2="128" stroke="#30363d" stroke-width="1"/>
-
-  <!-- Title -->
-  <text x="186" y="76"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="46" font-weight="800" letter-spacing="-0.5"
-        fill="#24292f">Big Picture</text>
-
-  <!-- Tagline -->
-  <text x="188" y="112"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
-        font-size="15.5" fill="#57606a" letter-spacing="0.2">
-    Zoom out. Understand what&#x2019;s really happening. Act on what matters.
-  </text>
+  <!-- Center glow -->
+  <circle cx="60" cy="60" r="9" fill="url(#dot-grad)" opacity="0.25"/>
+  <!-- Center dot -->
+  <circle cx="60" cy="60" r="5" fill="url(#dot-grad)"/>
+  <!-- Center highlight -->
+  <circle cx="58" cy="58" r="2" fill="#cae8ff" opacity="0.6"/>
 </svg>

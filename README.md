@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="assets/logo.svg" alt="Big Picture" width="820"/>
+  <img src="assets/logo.svg" alt="Big Picture" width="96"/>
+  <h1>Big Picture</h1>
+  <p>Zoom out. Understand what's really happening. Act on what matters.</p>
 </div>
 
 <br/>
