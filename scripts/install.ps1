@@ -42,6 +42,12 @@ function Get-DownloadedSkillPath {
         [string]$Ref
     )
 
+    # Ensure TLS 1.2 is available for older PowerShell versions
+    try {
+        [Net.ServicePointManager]::SecurityProtocol =
+            [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+    } catch {}
+
     $tempRoot = Join-Path ([IO.Path]::GetTempPath()) ("big-picture-skill-" + [guid]::NewGuid().ToString("N"))
     New-Item -ItemType Directory -Path $tempRoot | Out-Null
 
@@ -49,7 +55,7 @@ function Get-DownloadedSkillPath {
         $archive = Join-Path $tempRoot "source.zip"
         $url = "https://github.com/$Repo/archive/refs/heads/$Ref.zip"
 
-        Invoke-WebRequest -Uri $url -OutFile $archive
+        Invoke-WebRequest -Uri $url -OutFile $archive -UseBasicParsing
         Expand-Archive -LiteralPath $archive -DestinationPath $tempRoot
 
         $skillDir = Get-ChildItem -LiteralPath $tempRoot -Recurse -File -Filter "SKILL.md" |
