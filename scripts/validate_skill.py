@@ -69,7 +69,7 @@ def main() -> int:
         return fail("SKILL.md frontmatter must contain only name and description")
 
     name = frontmatter["name"].strip()
-    if name != "big-picture-thinking":
+    if name != "bigpicture":
         return fail(f"Unexpected skill name: {name}")
     if not re.fullmatch(r"[a-z0-9-]+", name):
         return fail("Skill name must use lowercase letters, digits, and hyphens")
@@ -104,8 +104,8 @@ def main() -> int:
     metadata = read_text(openai_yaml)
     if "display_name:" not in metadata or "short_description:" not in metadata:
         return fail("agents/openai.yaml is missing interface metadata")
-    if "$big-picture-thinking" not in metadata:
-        return fail("agents/openai.yaml default prompt must mention $big-picture-thinking")
+    if "$bigpicture" not in metadata:
+        return fail("agents/openai.yaml default prompt must mention $bigpicture")
 
     print("[OK] Skill package is valid")
     return 0
