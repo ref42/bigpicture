@@ -91,6 +91,34 @@ It draws on analytical frameworks from systems thinking, software architecture, 
 
 ---
 
+## Knowledge base
+
+Big Picture draws analytical frameworks from 19 books:
+
+| | |
+|---|---|
+| **The Mythical Man-Month** | Why large software projects fail |
+| **Peopleware** | People and environment drive productivity |
+| **SICP** | How abstraction controls complexity |
+| **CS:APP** | What the abstractions are hiding from you |
+| **Designing Data-Intensive Applications** | Trade-offs in distributed systems |
+| **Refactoring** | Evolving code safely over time |
+| **No Silver Bullet** | Essential complexity cannot be engineered away |
+| **Hackers and Painters** | The maker's mindset and taste |
+| **Software Engineering at Google** | Engineering at time × scale |
+| **The Design of Everyday Things** | Errors come from design, not users |
+| **Clean Architecture** | Dependency direction shapes change cost |
+| **Thinking in Systems** | Stocks, flows, and leverage points |
+| **Clean Code** | Code is written for humans to read |
+| **Beautiful Code** | Constraints reveal elegant solutions |
+| **Game Theory** | Structure determines strategic outcomes |
+| **Hacker's Delight** | Representation determines complexity |
+| **How Google Tests Software** | Quality is built in, not tested in |
+| **OSTEP** | Three virtualizations that run your code |
+| **矛盾论 · On Contradiction** | Find the principal contradiction first |
+
+---
+
 ## Install options
 
 Install for a single agent:
