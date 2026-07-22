@@ -17,7 +17,7 @@ jobs:
           python-version: "3.x"
 
       - name: Validate skill
-        run: python scripts/validate_skill.py big-picture-thinking
+        run: python scripts/validate_skill.py bigpicture
 
       - name: Check installer syntax
         run: |
@@ -28,13 +28,13 @@ jobs:
         run: |
           tmp="$(mktemp -d)"
           sh scripts/install.sh codex --install-root "$tmp"
-          test -f "$tmp/big-picture-thinking/SKILL.md"
+          test -f "$tmp/bigpicture/SKILL.md"
 
       - name: Test local PowerShell installer
         shell: pwsh
         run: |
           $tmp = Join-Path ([IO.Path]::GetTempPath()) ([guid]::NewGuid().ToString("N"))
           ./scripts/install.ps1 -Target codex -InstallRoot $tmp
-          if (-not (Test-Path (Join-Path $tmp "big-picture-thinking/SKILL.md"))) {
+          if (-not (Test-Path (Join-Path $tmp "bigpicture/SKILL.md"))) {
             throw "PowerShell installer did not install SKILL.md"
           }
