@@ -12,7 +12,7 @@
 
 <br/>
 
-**Big Picture** is an AI agent skill that turns messy, ambiguous problems into a clear map — what's really happening, why it's happening, what matters most, and what to do next.
+**Big Picture** is an AI agent skill that turns messy, ambiguous problems into a clear map — what's really happening, why it's happening, what matters most, and what to do next. It helps when you are lost in tiny bugs or local details and need to turn `vibe coding` back into grounded engineering instead of vague guessing.
 
 It works with **Claude Code** and **Codex** out of the box.
 
