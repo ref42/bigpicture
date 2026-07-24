@@ -12,6 +12,7 @@ REQUIRED_REFERENCES = {
     "references/lenses.md",
     "references/playbooks.md",
     "references/question-bank.md",
+    "references/software-engineering.md",
     "references/templates.md",
 }
 

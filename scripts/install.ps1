@@ -26,7 +26,7 @@ function Get-LocalSkillPath {
         return $null
     }
 
-    $candidate = Join-Path $PSScriptRoot "..\big-picture-thinking"
+    $candidate = Join-Path $PSScriptRoot "..\bigpicture"
     $skillFile = Join-Path $candidate "SKILL.md"
 
     if (Test-Path -LiteralPath $skillFile) {

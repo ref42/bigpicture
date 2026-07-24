@@ -93,7 +93,7 @@ It draws on analytical frameworks from systems thinking, software architecture, 
 
 ## Knowledge base
 
-Big Picture draws analytical frameworks from 19 books:
+Big Picture draws analytical frameworks from 19 books. The book notes are distilled into the installed reference at [`bigpicture/references/software-engineering.md`](bigpicture/references/software-engineering.md), so Claude Code and Codex can load the right lenses without pulling every note into context.
 
 | | |
 |---|---|

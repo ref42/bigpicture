@@ -93,7 +93,7 @@ Use $bigpicture 帮我看清团队执行力问题背后真正发生了什么
 
 ## 知识来源
 
-Big Picture 的分析框架提炼自 19 本书：
+Big Picture 的分析框架提炼自 19 本书。这些笔记已经被合并提炼到 [`bigpicture/references/software-engineering.md`](bigpicture/references/software-engineering.md) 这个安装版索引中，这样 Agent 可以按需加载合适的视角，而不是一次性塞入所有笔记。
 
 | | |
 |---|---|
