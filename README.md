@@ -3,22 +3,24 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.zh.md">中文</a>
+  <a href="README.md">中文</a> · <a href="README.en.md">English</a>
 </p>
 
 # Big Picture
 
-> Stop seeing trees. Start seeing the forest.
+> 看见森林，不止树木。
 
 <br/>
 
-**Big Picture** is an AI agent skill that turns messy, ambiguous problems into a clear map — what's really happening, why it's happening, what matters most, and what to do next. It helps when you are lost in tiny bugs or local details and need to turn `vibe coding` back into grounded engineering instead of vague guessing.
+**Big Picture** 是一个 AI Agent 技能，能把混乱、模糊的问题变成清晰的地图——真正发生了什么、为什么发生、什么最重要、下一步该怎么做。
 
-It works with **Claude Code** and **Codex** out of the box.
+当你被细碎 bug 或局部实现细节困住时，它能帮你先看清全局，把 `vibe coding` 拉回有依据的工程判断，而不是凭感觉乱撞。
+
+支持 **Claude Code** 和 **Codex**，开箱即用。
 
 ---
 
-## Install
+## 安装
 
 **macOS / Linux**
 
@@ -32,114 +34,114 @@ curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/ins
 & ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target both
 ```
 
-Restart Claude Code or Codex after installing. Already installed? Add `--force` / `-Force` to overwrite.
+安装完成后重启 Claude Code 或 Codex。已安装过？加上 `--force` / `-Force` 覆盖更新。
 
 ---
 
-## Usage
+## 使用方式
 
 **Claude Code**
 
 ```
-/bigpicture our deploy pipeline has been flaky for two weeks and three teams have tried to fix it
+/bigpicture 我们的部署流水线断断续续出问题已经两周了，三个团队都试过修但没解决
 ```
 
 ```
-/bigpicture I need to decide between joining a seed-stage startup as employee #5 or staying at my current job
+/bigpicture 我在纠结要不要辞掉现在的工作，去一家早期创业公司当第5号员工
 ```
 
 ```
-/bigpicture engagement metrics look fine but churn is quietly climbing and we don't know why
+/bigpicture 用户活跃数据看起来正常，但流失率在悄悄上升，我们搞不清原因
 ```
 
 **Codex**
 
 ```
-Use $bigpicture to help me understand what's really going on with our team's execution problems
+Use $bigpicture 帮我看清团队执行力问题背后真正发生了什么
 ```
 
 ---
 
-## What it does
+## 它能做什么
 
-Given any problem — technical, strategic, interpersonal, or creative — Big Picture:
+无论是技术问题、战略决策、人际冲突还是创意方向，Big Picture 都会：
 
-- Restates the real problem, not just the surface symptom
-- Maps the system: actors, incentives, bottlenecks, feedback loops
-- Separates causes from constraints from choices
-- Surfaces hidden assumptions and second-order effects
-- Compares tradeoffs honestly
-- Gives 2–4 viable paths forward and a recommended next action
+- 重新表述真正的问题，而不只是表面症状
+- 绘制系统地图：参与方、激励机制、瓶颈、反馈回路
+- 区分原因、约束与选择
+- 挖掘隐藏假设和二阶效应
+- 诚实地呈现权衡
+- 给出 2–4 条可行路径，并推荐下一个最小行动
 
-It draws on analytical frameworks from systems thinking, software architecture, distributed systems, decision theory, team dynamics, and more — and picks the ones that actually fit your situation.
+它综合了系统思维、软件架构、分布式系统、决策理论、团队协作等领域的分析框架，并根据你的具体情况选用最合适的那些。
 
 ---
 
-## Problem types
+## 问题类型
 
 | | |
 |---|---|
-| **Diagnostic** | Why is this happening? What's the root cause? |
-| **Strategic** | Which direction should we take? |
-| **Decision** | Comparing options, feeling stuck choosing |
-| **Systems** | Actors, incentives, feedback loops, structural causes |
-| **Technical** | Architecture, failure modes, engineering tradeoffs |
-| **Product / business** | Market, customers, distribution, positioning |
-| **Career / learning** | Goals, opportunity cost, skill leverage |
-| **Conflict / org** | Stakeholders, power, trust, communication |
-| **Creative / comms** | Audience, message, narrative, framing |
+| **诊断型** | 为什么会这样？根本原因是什么？ |
+| **战略型** | 我们该往哪个方向走？ |
+| **决策型** | 在几个选项之间纠结，难以抉择 |
+| **系统型** | 参与方、激励机制、反馈回路、结构性原因 |
+| **技术型** | 架构、失败模式、工程权衡 |
+| **产品/商业型** | 市场、用户、分发渠道、定位 |
+| **职业/学习型** | 目标、机会成本、技能杠杆 |
+| **冲突/组织型** | 利益相关方、权力、信任、沟通 |
+| **创意/传播型** | 受众、信息、叙事、框架 |
 
 ---
 
-## Knowledge base
+## 知识来源
 
-Big Picture draws analytical frameworks from 19 books. The book notes are distilled into the installed reference at [`bigpicture/references/software-engineering.md`](bigpicture/references/software-engineering.md), so Claude Code and Codex can load the right lenses without pulling every note into context.
+Big Picture 的分析框架提炼自 19 本书。这些笔记已经被合并提炼到 [`bigpicture/references/software-engineering.md`](bigpicture/references/software-engineering.md) 这个安装版索引中，这样 Agent 可以按需加载合适的视角，而不是一次性塞入所有笔记。
 
 | | |
 |---|---|
-| **The Mythical Man-Month** | Why large software projects fail |
-| **Peopleware** | People and environment drive productivity |
-| **SICP** | How abstraction controls complexity |
-| **CS:APP** | What the abstractions are hiding from you |
-| **Designing Data-Intensive Applications** | Trade-offs in distributed systems |
-| **Refactoring** | Evolving code safely over time |
-| **No Silver Bullet** | Essential complexity cannot be engineered away |
-| **Hackers and Painters** | The maker's mindset and taste |
-| **Software Engineering at Google** | Engineering at time × scale |
-| **The Design of Everyday Things** | Errors come from design, not users |
-| **Clean Architecture** | Dependency direction shapes change cost |
-| **Thinking in Systems** | Stocks, flows, and leverage points |
-| **Clean Code** | Code is written for humans to read |
-| **Beautiful Code** | Constraints reveal elegant solutions |
-| **Game Theory** | Structure determines strategic outcomes |
-| **Hacker's Delight** | Representation determines complexity |
-| **How Google Tests Software** | Quality is built in, not tested in |
-| **OSTEP** | Three virtualizations that run your code |
-| **矛盾论 · On Contradiction** | Find the principal contradiction first |
+| **人月神话** | 大型软件项目为何失败 |
+| **Peopleware** | 人与环境决定生产力 |
+| **SICP** | 抽象如何控制复杂度 |
+| **深入理解计算机系统** | 抽象之下藏着什么 |
+| **数据密集型应用系统设计** | 分布式系统的权衡之道 |
+| **重构** | 让代码安全地随时间演化 |
+| **没有银弹** | 本质复杂度无法被消除 |
+| **黑客与画家** | 制造者的品味与独立 |
+| **SWE at Google** | 时间 × 规模下的工程化 |
+| **设计心理学** | 错误来自设计，不来自用户 |
+| **整洁架构** | 依赖方向决定变更成本 |
+| **系统思考** | 存量、流量与杠杆点 |
+| **代码整洁之道** | 代码是写给人读的 |
+| **代码之美** | 约束是雕刻优雅的刀 |
+| **博弈论** | 结构决定策略性结果 |
+| **算法心得** | 表示决定复杂度 |
+| **谷歌的软件测试之道** | 质量是开发出来的，不是测出来的 |
+| **操作系统导论** | 支撑代码运行的三个幻觉 |
+| **矛盾论** | 先找主要矛盾 |
 
 ---
 
-## Install options
+## 更多安装选项
 
-Install for a single agent:
+只安装到单个 Agent：
 
 ```sh
-# Claude Code only
+# 仅 Claude Code
 curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- claude
 
-# Codex only
+# 仅 Codex
 curl -fsSL https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.sh | sh -s -- codex
 ```
 
 ```powershell
-# Claude Code only
+# 仅 Claude Code
 & ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target claude
 
-# Codex only
+# 仅 Codex
 & ([scriptblock]::Create((Invoke-RestMethod https://raw.githubusercontent.com/ref42/bigpicture/master/scripts/install.ps1))) -Target codex
 ```
 
-Install from a clone:
+从仓库克隆安装：
 
 ```sh
 git clone https://github.com/ref42/bigpicture.git
@@ -153,27 +155,27 @@ cd bigpicture
 .\scripts\install.ps1 -Target both
 ```
 
-**Install locations**
+**安装位置**
 
-| Agent | Path |
+| Agent | 路径 |
 |---|---|
 | Claude Code | `~/.claude/skills/bigpicture` |
 | Codex | `~/.agents/skills/bigpicture` |
 
-Use `--install-root` / `-InstallRoot` if your agent reads skills from a custom directory.
+如果你的 Agent 使用自定义的 skills 目录，可以用 `--install-root` / `-InstallRoot` 指定。
 
 ---
 
-## Development
+## 开发
 
-Validate the skill:
+验证 skill：
 
 ```sh
 python scripts/validate_skill.py bigpicture
 bash -n scripts/install.sh
 ```
 
-Test a local install:
+测试本地安装：
 
 ```sh
 tmp="$(mktemp -d)"
@@ -189,6 +191,6 @@ Test-Path (Join-Path $tmp "bigpicture\SKILL.md")
 
 ---
 
-## License
+## 许可证
 
-MIT — see [LICENSE](LICENSE).
+MIT — 详见 [LICENSE](LICENSE)。
